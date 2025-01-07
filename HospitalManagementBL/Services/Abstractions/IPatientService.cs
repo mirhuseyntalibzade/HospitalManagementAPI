@@ -1,4 +1,5 @@
-﻿using HospitalManagementCORE.Models;
+﻿using HospitalManagementBL.DTOs.PatientDTOs;
+using HospitalManagementCORE.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,12 @@ namespace HospitalManagementBL.Services.Abstractions
 {
     public interface IPatientService
     {
-        Task<ICollection<Patient>> GetAllPatientsAsync();
-        Task<Patient> GetPatientByIdAsync(int Id);
-        Task AddPatientAsync(Patient patient);
-        Task UpdatePatientAsync(int Id, Patient patient);
-        Task DeletePatientAsync(int Id, Patient patient);
+        Task<ICollection<GetPatientDTO>> GetAllPatientsAsync();
+        Task<GetPatientDTO> GetPatientByIdAsync(int Id);
+        Task AddPatientAsync(AddPatientDTO genderDTO);
+        Task UpdatePatientAsync(int Id, UpdatePatientDTO genderDTO);
+        Task DeletePatientAsync(int Id);
+        Task SoftDeletePatientAsync(int Id);
+        Task RevertSoftDeleteAsync(int Id);
     }
 }

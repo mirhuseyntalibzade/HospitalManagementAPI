@@ -1,4 +1,5 @@
-﻿using HospitalManagementCORE.Models;
+﻿using HospitalManagementBL.DTOs.GenderDTOs;
+using HospitalManagementCORE.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,12 @@ namespace HospitalManagementBL.Services.Abstractions
 {
     public interface IGenderService
     {
-        Task<ICollection<Gender>> GetAllGendersAsync();
-        Task<Gender> GetGenderByIdAsync(int Id);
-        Task AddGenderAsync(Gender gender);
-        Task UpdateGenderAsync(int Id, Gender gender);
-        Task DeleteGenderAsync(int Id, Gender gender);
+        Task<ICollection<GetGenderDTO>> GetAllGendersAsync();
+        Task<GetGenderDTO> GetGenderByIdAsync(int Id);
+        Task AddGenderAsync(AddGenderDTO genderDTO);
+        Task UpdateGenderAsync(int Id, UpdateGenderDTO genderDTO);
+        Task DeleteGenderAsync(int Id);
+        Task SoftDeleteGenderAsync(int Id);
+        Task RevertSoftDeleteAsync(int Id);
     }
 }

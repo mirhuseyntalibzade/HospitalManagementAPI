@@ -147,3 +147,7 @@ C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementApi\obj\Deb
 C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementApi\obj\Debug\net8.0\ref\HospitalManagementApi.dll
 C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementApi\bin\Debug\net8.0\HospitalManagementCORE.dll
 C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementApi\bin\Debug\net8.0\HospitalManagementCORE.pdb
+C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementApi\bin\Debug\net8.0\HospitalManagementBL.dll
+C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementApi\bin\Debug\net8.0\HospitalManagementBL.pdb
+C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementApi\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementApi\bin\Debug\net8.0\FluentValidation.dll

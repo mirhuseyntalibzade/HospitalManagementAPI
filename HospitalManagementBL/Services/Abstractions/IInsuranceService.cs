@@ -1,13 +1,16 @@
-﻿using HospitalManagementCORE.Models;
+﻿using HospitalManagementBL.DTOs.InsuranceDTOs;
+using HospitalManagementCORE.Models;
 
 namespace HospitalManagementBL.Services.Abstractions
 {
     public interface IInsuranceService
     {
-        Task<ICollection<Insurance>> GetAllInsurancesAsync();
-        Task<Insurance> GetInsuranceByIdAsync(int Id);
-        Task AddInsuranceAsync(Insurance insurance);
-        Task UpdateInsuranceAsync(int Id, Insurance insurance);
-        Task DeleteInsuranceAsync(int Id, Insurance insurance);
+        Task<ICollection<GetInsuranceDTO>> GetAllInsurancesAsync();
+        Task<GetInsuranceDTO> GetInsuranceByIdAsync(int Id);
+        Task AddInsuranceAsync(AddInsuranceDTO genderDTO);
+        Task UpdateInsuranceAsync(int Id, UpdateInsuranceDTO genderDTO);
+        Task DeleteInsuranceAsync(int Id);
+        Task SoftDeleteInsuranceAsync(int Id);
+        Task RevertSoftDeleteAsync(int Id);
     }
 }

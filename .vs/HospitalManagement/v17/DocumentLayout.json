@@ -1,12 +1,122 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AEA70EFE-0206-4AEA-9DD4-BBAE2B9B08B0}|HospitalManagementApi\\HospitalManagementApi.csproj|c:\\users\\classtime\\source\\repos\\hospitalmanagement\\hospitalmanagementapi\\controllers\\genderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEA70EFE-0206-4AEA-9DD4-BBAE2B9B08B0}|HospitalManagementApi\\HospitalManagementApi.csproj|solutionrelative:hospitalmanagementapi\\controllers\\genderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33FC61CD-0469-4DA9-8DE4-395E34B55EA3}|HospitalManagementBL\\HospitalManagementBL.csproj|c:\\users\\classtime\\source\\repos\\hospitalmanagement\\hospitalmanagementbl\\validators\\gendervalidators\\updategendervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FC61CD-0469-4DA9-8DE4-395E34B55EA3}|HospitalManagementBL\\HospitalManagementBL.csproj|solutionrelative:hospitalmanagementbl\\validators\\gendervalidators\\updategendervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33FC61CD-0469-4DA9-8DE4-395E34B55EA3}|HospitalManagementBL\\HospitalManagementBL.csproj|c:\\users\\classtime\\source\\repos\\hospitalmanagement\\hospitalmanagementbl\\validators\\gendervalidators\\addgendervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FC61CD-0469-4DA9-8DE4-395E34B55EA3}|HospitalManagementBL\\HospitalManagementBL.csproj|solutionrelative:hospitalmanagementbl\\validators\\gendervalidators\\addgendervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEA70EFE-0206-4AEA-9DD4-BBAE2B9B08B0}|HospitalManagementApi\\HospitalManagementApi.csproj|c:\\users\\classtime\\source\\repos\\hospitalmanagement\\hospitalmanagementapi\\controllers\\insurancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEA70EFE-0206-4AEA-9DD4-BBAE2B9B08B0}|HospitalManagementApi\\HospitalManagementApi.csproj|solutionrelative:hospitalmanagementapi\\controllers\\insurancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD97EFB1-1671-4AF6-B775-D2938EC1FB08}|HospitalManagementCORE\\HospitalManagementCORE.csproj|c:\\users\\classtime\\source\\repos\\hospitalmanagement\\hospitalmanagementcore\\models\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD97EFB1-1671-4AF6-B775-D2938EC1FB08}|HospitalManagementCORE\\HospitalManagementCORE.csproj|solutionrelative:hospitalmanagementcore\\models\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD97EFB1-1671-4AF6-B775-D2938EC1FB08}|HospitalManagementCORE\\HospitalManagementCORE.csproj|c:\\users\\classtime\\source\\repos\\hospitalmanagement\\hospitalmanagementcore\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD97EFB1-1671-4AF6-B775-D2938EC1FB08}|HospitalManagementCORE\\HospitalManagementCORE.csproj|solutionrelative:hospitalmanagementcore\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateGenderValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementBL\\Validators\\GenderValidators\\UpdateGenderValidator.cs",
+              "RelativeDocumentMoniker": "HospitalManagementBL\\Validators\\GenderValidators\\UpdateGenderValidator.cs",
+              "ToolTip": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementBL\\Validators\\GenderValidators\\UpdateGenderValidator.cs",
+              "RelativeToolTip": "HospitalManagementBL\\Validators\\GenderValidators\\UpdateGenderValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T14:45:36.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GendersController.cs",
+              "DocumentMoniker": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementApi\\Controllers\\GendersController.cs",
+              "RelativeDocumentMoniker": "HospitalManagementApi\\Controllers\\GendersController.cs",
+              "ToolTip": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementApi\\Controllers\\GendersController.cs",
+              "RelativeToolTip": "HospitalManagementApi\\Controllers\\GendersController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAIwEkAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T14:43:32.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InsurancesController.cs",
+              "DocumentMoniker": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementApi\\Controllers\\InsurancesController.cs",
+              "RelativeDocumentMoniker": "HospitalManagementApi\\Controllers\\InsurancesController.cs",
+              "ToolTip": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementApi\\Controllers\\InsurancesController.cs",
+              "RelativeToolTip": "HospitalManagementApi\\Controllers\\InsurancesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T14:43:32.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Gender.cs",
+              "DocumentMoniker": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementCORE\\Models\\Gender.cs",
+              "RelativeDocumentMoniker": "HospitalManagementCORE\\Models\\Gender.cs",
+              "ToolTip": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementCORE\\Models\\Gender.cs",
+              "RelativeToolTip": "HospitalManagementCORE\\Models\\Gender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T14:40:51.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddGenderValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementBL\\Validators\\GenderValidators\\AddGenderValidator.cs",
+              "RelativeDocumentMoniker": "HospitalManagementBL\\Validators\\GenderValidators\\AddGenderValidator.cs",
+              "ToolTip": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementBL\\Validators\\GenderValidators\\AddGenderValidator.cs",
+              "RelativeToolTip": "HospitalManagementBL\\Validators\\GenderValidators\\AddGenderValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T14:38:21.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementCORE\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "HospitalManagementCORE\\Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementCORE\\Models\\Patient.cs",
+              "RelativeToolTip": "HospitalManagementCORE\\Models\\Patient.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T14:31:11.329Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

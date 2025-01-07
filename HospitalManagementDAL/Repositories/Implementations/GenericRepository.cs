@@ -35,7 +35,7 @@ namespace HospitalManagementDAL.Repositories.Implementations
         }
         public void Update(T entity)
         {
-            Table.Remove(entity);
+            Table.Update(entity);
         }
 
         public void Delete(T entity)

@@ -9,5 +9,6 @@ namespace HospitalManagementDAL.Repositories.Abstractions
 {
     public interface IInsuranceRepository : IGenericRepository<Insurance>
     {
+        Task<Insurance> GetInsuranceByIdWithPatients(int Id);
     }
 }

@@ -10,3 +10,9 @@ C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementBL\obj\Debu
 C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementBL\obj\Debug\net8.0\refint\HospitalManagementBL.dll
 C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementBL\obj\Debug\net8.0\HospitalManagementBL.pdb
 C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementBL\obj\Debug\net8.0\ref\HospitalManagementBL.dll
+C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementBL\bin\Debug\net8.0\HospitalManagementCORE.dll
+C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementBL\bin\Debug\net8.0\HospitalManagementDAL.dll
+C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementBL\bin\Debug\net8.0\HospitalManagementCORE.pdb
+C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementBL\bin\Debug\net8.0\HospitalManagementDAL.pdb
+C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementBL\obj\Debug\net8.0\HospitalManagementBL.csproj.AssemblyReference.cache
+C:\Users\Classtime\source\repos\HospitalManagement\HospitalManagementBL\obj\Debug\net8.0\Hospital.453323A6.Up2Date

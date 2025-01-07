@@ -9,5 +9,6 @@ namespace HospitalManagementDAL.Repositories.Abstractions
 {
     public interface IGenderRepository : IGenericRepository<Gender>
     {
+        Task<Gender> GetGenderByIdWithPatients(int Id);
     }
 }

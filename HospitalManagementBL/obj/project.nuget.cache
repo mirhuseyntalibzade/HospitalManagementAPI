@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "FeYF1UivhXJMiZRg6vg/Sl7w2OLNZMVDKk7EyQ21LpDsaYbcNX4zk9HY++H4kvS6onlK4QxE2v0AQTAAOTfthw==",
+  "dgSpecHash": "HmjsCLlEc0cgUZQtzowWuOJDi2vZQts0bMtvnpGKzmvO9qZKk/Z5PLyh/TCdEmrgqReXgoIF+kb3R55QnHK9cw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Classtime\\source\\repos\\HospitalManagement\\HospitalManagementBL\\HospitalManagementBL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Classtime\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Classtime\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Classtime\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\Classtime\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\Classtime\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Classtime\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Classtime\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.6\\microsoft.data.sqlclient.5.1.6.nupkg.sha512",

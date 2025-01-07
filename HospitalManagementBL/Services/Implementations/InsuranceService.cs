@@ -1,5 +1,8 @@
-﻿using HospitalManagementBL.Services.Abstractions;
+﻿using AutoMapper;
+using HospitalManagementBL.DTOs.InsuranceDTOs;
+using HospitalManagementBL.Services.Abstractions;
 using HospitalManagementCORE.Models;
+using HospitalManagementDAL.Repositories.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,29 +13,80 @@ namespace HospitalManagementBL.Services.Implementations
 {
     public class InsuranceService : IInsuranceService
     {
-        public Task AddInsuranceAsync(Insurance insurance)
+        readonly IInsuranceRepository _repository;
+        readonly IMapper _mapper;
+        public InsuranceService(IInsuranceRepository repository, IMapper mapper)
         {
-            throw new NotImplementedException();
+            _repository = repository;
+            _mapper = mapper;
+        }
+        public async Task<ICollection<GetInsuranceDTO>> GetAllInsurancesAsync()
+        {
+            ICollection<Insurance> insurances = await _repository.GetAllAsync();
+            ICollection<GetInsuranceDTO> insurancesDto = _mapper.Map<ICollection<GetInsuranceDTO>>(insurances);
+            return insurancesDto;
         }
 
-        public Task DeleteInsuranceAsync(int Id, Insurance insurance)
+        public async Task<GetInsuranceDTO> GetInsuranceByIdAsync(int Id)
         {
-            throw new NotImplementedException();
+            Insurance insurance = await _repository.GetInsuranceByIdWithPatients(Id);
+            if (insurance is null)
+            {
+                throw new Exception("Insurance could not be found");
+            }
+            GetInsuranceDTO dto = _mapper.Map<GetInsuranceDTO>(insurance);
+            return dto;
         }
 
-        public Task<ICollection<Insurance>> GetAllInsurancesAsync()
+        public async Task AddInsuranceAsync(AddInsuranceDTO insuranceDTO)
         {
-            throw new NotImplementedException();
+            Insurance insurance = _mapper.Map<Insurance>(insuranceDTO);
+            await _repository.AddAsync(insurance);
+            await _repository.SaveChangesAsync();
+
         }
 
-        public Task<Insurance> GetInsuranceByIdAsync()
+        public async Task DeleteInsuranceAsync(int Id)
         {
-            throw new NotImplementedException();
+            Insurance insurance = await _repository.GetByIdAsync(Id);
+            _repository.Delete(insurance);
         }
 
-        public Task UpdateInsuranceAsync(int Id, Insurance insurance)
+
+        public async Task UpdateInsuranceAsync(int Id, UpdateInsuranceDTO updateInsuranceDTO)
         {
-            throw new NotImplementedException();
+            await GetInsuranceByIdAsync(Id);
+
+            Insurance updatedInsurance = _mapper.Map<Insurance>(updateInsuranceDTO);
+            updatedInsurance.Id = Id;
+            _repository.Update(updatedInsurance);
+            _repository.SaveChangesAsync();
+        }
+
+        public async Task SoftDeleteInsuranceAsync(int Id)
+        {
+            Insurance insurance = await _repository.GetByIdAsync(Id);
+            if (insurance.isDeleted)
+            {
+                throw new Exception("Insurance is already deleted.");
+            }
+            insurance.isDeleted = true;
+            insurance.DeletedDate = DateTime.UtcNow.AddHours(4);
+            _repository.Update(insurance);
+            await _repository.SaveChangesAsync();
+        }
+
+        public async Task RevertSoftDeleteAsync(int Id)
+        {
+            Insurance insurance = await _repository.GetByIdAsync(Id);
+            if (!insurance.isDeleted)
+            {
+                throw new Exception("Insurance is already reverted.");
+            }
+            insurance.isDeleted = false;
+            insurance.DeletedDate = null;
+            _repository.Update(insurance);
+            await _repository.SaveChangesAsync();
         }
     }
 }

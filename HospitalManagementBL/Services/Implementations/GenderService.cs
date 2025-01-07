@@ -1,5 +1,6 @@
 ﻿using HospitalManagementBL.Services.Abstractions;
 using HospitalManagementCORE.Models;
+using HospitalManagementDAL.Repositories.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,29 +11,42 @@ namespace HospitalManagementBL.Services.Implementations
 {
     public class GenderService : IGenderService
     {
-        public Task AddGenderAsync(Gender gender)
+        readonly IGenderRepository _repository;
+        public GenderService(IGenderRepository repository)
         {
-            throw new NotImplementedException();
+            _repository = repository;
+        }
+        public async Task<ICollection<Gender>> GetAllGendersAsync()
+        {
+            return await _repository.GetAllAsync();
         }
 
-        public Task DeleteGenderAsync(int Id, Gender gender)
+        public async Task<Gender> GetGenderByIdAsync(int Id)
         {
-            throw new NotImplementedException();
+            Gender gender = await _repository.GetByIdAsync(Id);
+            if (gender is null)
+            {
+                throw new Exception("Gender could not be found");
+            }
+            return gender;
+        }
+        
+        public async Task AddGenderAsync(Gender gender)
+        {
+            await _repository.AddAsync(gender);
         }
 
-        public Task<ICollection<Gender>> GetAllGendersAsync()
+        public async Task DeleteGenderAsync(int Id, Gender gender)
         {
-            throw new NotImplementedException();
+            Gender deletedGender = await GetGenderByIdAsync(Id);
+            _repository.Delete(deletedGender);
         }
 
-        public Task<Gender> GetGenderByIdAsync()
-        {
-            throw new NotImplementedException();
-        }
 
-        public Task UpdateGenderAsync(int Id, Gender gender)
+        public async Task UpdateGenderAsync(int Id, Gender gender)
         {
-            throw new NotImplementedException();
+            Gender updatedGender = await GetGenderByIdAsync(Id);
+            _repository.Update(updatedGender);
         }
     }
 }

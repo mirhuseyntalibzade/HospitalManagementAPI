@@ -19,7 +19,7 @@ namespace HospitalManagementDAL.Repositories.Implementations
         }
 
         DbSet<T> Table => _context.Set<T>();
-        public async Task<ICollection<T>> GetAllAsync(T entity)
+        public async Task<ICollection<T>> GetAllAsync()
         {
             return await Table.ToListAsync();
         }
